@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mukusu Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MUKUSU SECONDARY SCHOOL</div>
+          <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#academics">Academics</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#student-portal">Student Portal</a></li>
+            </ul>
+          </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Mukusu Secondary school</h1>
+        <p>Building a brighter future for our students.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our school is dedicated to providing quality education and fostering growth in every student.</p>
+    </section>
+
+    <section id="academics">
+        <h2>Academics</h2>
+        <p>Explore our diverse curriculum designed to meet the needs of every learner.</p>
+    </section>
+
+    <section id="admissions">
+        <h2>Admissions</h2>
+        <form id="admission-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+             <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <section id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <section id="student-portal">
+        <h2>Student Portal</h2>
+        <form id="portal-form">
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+
+            <button type="submit">Access Portal</button>
+        </form>
+
+        <div id="portal-info" style="display: none;">
+            <h3>Fee Balance</h3>
+            <p id="fee-balance">$0.00</p>
+
+            <h3>Academic Results</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="results-table">
+                    <tr>
+                        <td>Mathematics</td>
+                        <td>A</td>
+                    </tr>
+                    <tr>
+                        <td>Science</td>
+                        <td>B+</td>
+                    </tr>
+                    <tr>
+                        <td>English</td>
+                        <td>A-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 mukusu secondary schools. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
